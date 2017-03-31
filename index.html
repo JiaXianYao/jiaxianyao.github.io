@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JiaXian Yao - CS294-26 Project 1</title>
+        <meta name="description" content="JiaXian Yao - CS294-26 Project 2">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        
+        <projnum>CS294-26: Project 2</projnum>        
+        <projtitle>Building a Pinhole Camera</projtitle>
+        <name>JiaXian Yao</name>
+        
+        <header>1. Pinhole Camera</header>
+        
+        <p>
+            For this project, I have created a pinhole camera (i.e., camera obsura), which is a light-proof dark box with a pinhole on one face and a white paper screen on the opposing face. Light from a scene passes through the pinhole and forms an inverted image on the screen. This image can be captured using a digital camera with a long exposure time.
+        </p>
+        
+        <p>
+            I have designed the pinhole camera based on the suggested instructions on the project webpage. The following photos show my pinhole camera setup. As shown in <b>Figure 1a</b>, I covered the face on the longer side of the cardboard box with white paper because its distance to the opposing face is longer than the minimum focus of my digital camera. I covered the rest of the interior faces with black paper and sealed the box with duct tapes to prevent light leaks (<b>Figure 1b</b>). <b>Figure 1c</b> shows the hole for the interchangeable pinhole cards and the hole for the camera lens (already inserted). I chose the position of the camera lens hole such that <em>camera's field of view lies completely within the white paper screen</em>.
+        </p>
+        
+        <table style="width:100%" align="center">
+            <tr align="center">
+                <th colspan="3">Figure 1. Pinhole Camera Setup</th>
+            </tr>
+            <tr align="center">
+                <td>(a) Work-in-progress box</td>
+                <td>(b) Completed box</td>
+                <td>(c) Lens and hole for pinhole cards</td>
+            </tr>
+            <tr>
+                <td style="width:33%"><a target="_blank" href="1.jpg"><img style="border: 0px" src="1.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="2.jpg"><img style="border: 0px" src="2.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="3.jpg"><img style="border: 0px" src="3.jpg"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>(d) Interchangeable pinhole cards</td>
+                <td>(e) Box with pinhole card attached</td>
+                <td>(f) Box with digital camera mounted</td>
+            </tr>
+            <tr>
+                <td style="width:33%"><a target="_blank" href="4.jpg"><img style="border: 0px" src="4.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="5.jpg"><img style="border: 0px" src="5.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="6.jpg"><img style="border: 0px" src="6.jpg"></a></td>
+            </tr>
+        </table>
+        
+        <p style="margin-top: 1em"></p>
+        
+        <table>
+            <tr align="center">
+                <td style="width:60%">
+                    <p>
+                        Based on the formula d = 1.9 * sqrt(f * lambda), I have computed that the optimal pinhole diameter for my box is 0.95mm. I have thus created three pinhole cards of diameter <b>1.0mm</b>, <b>2.0mm</b>, and <b>3.0mm</b> (from left to right in <b>Figure 1d</b>). These pinhole cards are wrapped with clear tapes so that they can be repeatedly ducted-taped to the hole on the box (<b>Figure 1e</b>). Finally, <b>Figure 1f</b> shows the complete pinhole camera setup, ready to take obscura photos.
+                    </p>
+                </td>
+                <td style="width:40%" rowspan="2"><a target="_blank" href="red.jpg"><img style="border: 0px" src="red.jpg"></a></td>
+            </tr>
+            <tr align="center">
+                <td style="width:60%">
+                    <p>
+                        During my initial test of the pinhole camera, I used thin brown paper for the pinhole card and had a problem with light leaking through the thin pinhole card, which resulted in a polluted image with highly red tint, shown on the right. I fixed this problem by re-making the pinhole cards with much thicker black paper.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        
+        <header>2. Obscura Photos</header>
+        
+        <p>
+            The following show two scenes captured by my pinhole camera, using all three pinhole sizes. The pinhole size and the exposure time are indicated on top of each photo. The photos are flipped vertically and their values are adjusted so that the lumincance histogram spans the entire range from 0 to 255.
+        </p>
+        
+        <p>
+            Please click on the photos for higher resolution images.
+        </p>
+        
+        <table style="width:100%" align="center">
+            <tr align="center">
+                <th colspan="3">Figure 2. A Co-cp Building</th>
+            </tr>
+            <tr align="center">
+                <td>(a) 1.0mm, 90s</td>
+                <td>(b) 2.0mm, 50s</td>
+                <td>(c) 3.0mm, 20s</td>
+            </tr>
+            <tr>
+                <td style="width:33%"><a target="_blank" href="1-1mm-90s.jpg"><img style="border: 0px" src="1-1mm-90s.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="1-2mm-50s.jpg"><img style="border: 0px" src="1-2mm-50s.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="1-3mm-20s.jpg"><img style="border: 0px" src="1-3mm-20s.jpg"></a></td>
+            </tr>
+        </table>
+        
+        <p style="margin-top: 1em"></p>
+        
+        <table style="width:100%" align="center">
+            <tr align="center">
+                <th colspan="3">Figure 3. Etcheverry and Jacob Hall</th>
+            </tr>
+            <tr align="center">
+                <td>(a) 1.0mm, 90s</td>
+                <td>(b) 2.0mm, 50s</td>
+                <td>(c) 3.0mm, 20s</td>
+            </tr>
+            <tr>
+                <td style="width:33%"><a target="_blank" href="2-1mm-90s.jpg"><img style="border: 0px" src="2-1mm-90s.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="2-2mm-50s.jpg"><img style="border: 0px" src="2-2mm-50s.jpg"></a></td>
+                <td style="width:33%"><a target="_blank" href="2-3mm-20s.jpg"><img style="border: 0px" src="2-3mm-20s.jpg"></a></td>
+            </tr>
+        </table>
+
+        <p style="margin-top: 1em">
+            As you can see, the photos captured with the smallest, optimal pinhole size (1.0mm) are the sharpest, while the photos taken with the largest pinhole size (3.0mm) are the blurriest. This is because for a smaller pinhole size, each point in the scene casts fewer rays through the pinhole onto the screen, resulting in a sharper photo. With a larger pinhole size, each point in the scene casts rays to many more points on the screen, leading to a blurrier photo.
+        </p>
+        
+        <header>3. Additional Photos</header>
+        
+        <p>
+            Since the pinhole size 1.0mm captures the sharpest (and the best) photos, I have captured four more scenes using the pinhole camera with pinhole size 1.0mm, shown below. The exposure time is indicated on top of each photo. Because I took the photo of the Doe Memorial Library close to sunset, I prolonged the exposure time to let in more light. Similarly, since most of the Sutardja Dai Hall was in shade at the time of shooting, I extended the exposure time as well. Again, the photos are flipped vertically and their values are adjusted so that the lumincance histogram spans the entire range from 0 to 255. 
+        </p>
+        
+        <p>
+            Please click on the photos for higher resolution images.
+        </p>
+        
+        <table style="width:100%" align="center">
+            <tr align="center">
+                <th colspan="3">Figure 4. Four more scenes</th>
+            </tr>
+            <tr align="center">
+                <td>(a) East Asain Library - 90s</td>
+                <td>(b) LeConte Hall - 90s</td>
+            </tr>
+            <tr>
+                <td style="width:50%"><a target="_blank" href="6-1mm-90s.jpg"><img style="border: 0px" src="6-1mm-90s.jpg"></a></td>
+                <td style="width:50%"><a target="_blank" href="5-1mm-90s.jpg"><img style="border: 0px" src="5-1mm-90s.jpg"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td>(c) Doe Memorial Library - 120s</td>
+                <td>(d) Sutardja Dai Hall - 150s</td>
+            </tr>
+            <tr>
+                <td style="width:50%"><a target="_blank" href="4-1mm-120s.jpg"><img style="border: 0px" src="4-1mm-120s.jpg"></a></td>
+                <td style="width:50%"><a target="_blank" href="3-1mm-150s.jpg"><img style="border: 0px" src="3-1mm-150s.jpg"></a></td>
+            </tr>
+        </table>
+        
+        <name align="center" style="margin-top: 1em">CS294-26: Project 2 | Building a Pinhole Camera | JiaXian Yao</name>
+        
+    </body>
+    
+</html>
