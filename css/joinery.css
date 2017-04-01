@@ -1,0 +1,59 @@
+header
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: block
+}
+
+papertitle
+{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    display: block
+}
+
+name
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.video-container
+{
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/* http://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag */
+pre.bibtex
+{
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+blockquote
+{
+    margin:0 0 0em;
+    padding: 0 0 0 1.2em;
+    border-left:1px solid #ddd
+}
