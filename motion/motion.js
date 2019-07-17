@@ -1,5 +1,6 @@
 $(document).ready(() => {
   window.addEventListener('deviceorientation', (event) => {
-    console.log('HELLO');
+    $('#1').text(Math.trunc(event.beta));
+    $('#2').text(Math.trunc(event.gamma));
   });
 });
